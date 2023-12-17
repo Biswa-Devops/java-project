@@ -1,9 +1,10 @@
 pipeline{
     agent any
-        stages{
+    stages{
             stage("Checkout Code"){
-                steps{
-                 git branch: 'main', url: ''
+            steps{
+                     git branch: 'main', url: 'https://github.com/Biswa-Devops/java-project.git'
+                 }
             }
-        }
-        
+    }
+}
