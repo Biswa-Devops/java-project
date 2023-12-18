@@ -8,7 +8,7 @@ pipeline{
                         stage("checkout code"){
                                 steps{
                                         echo"checkout started"
-                                        git branch: 'master',url: https://github.com/Biswa-Devops/java-project.git
+                                        git branch: 'master',url: 'https://github.com/Biswa-Devops/java-project.git'
                                         echo"checkout complete"
                                 }                              
                         }
