@@ -8,13 +8,11 @@ pipeline{
                                 echo("checkout started")
                                 git branch: 'master',url: https://github.com/Biswa-Devops/java-project.git
                                 echo("checkout complete")
-                stages{
                         stage("build code")
                         steps{
                                 echo("build started")
                                 sh 'mvn clean package'
                                 echo('build complete')
-                 stage{
                         stage("Deployment code")
                         steps{
                                 echo("Deployment started")
@@ -27,5 +25,4 @@ pipeline{
                 }                
                         }
                 }
-        }
-}
+        
