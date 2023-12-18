@@ -16,7 +16,7 @@ pipeline{
                         stage("Deployment code")
                         steps{
                                 echo("Deployment started")
-                                deploy adapters: [tomcat9(credentialsId: 'tomcatcred',url: 'http://3.111.52.56:8080/')],contextPath: 'welcomeapp',war: '**/.war'
+                                deploy adapters: [tomcat9(credentialsId: 'tomcatcred',url: 'http://3.111.52.56:8080/')],contextPath: 'welcomeapp',war: '**/*.war'
                                 echo("Deployment complete")
                         }
                  }               
